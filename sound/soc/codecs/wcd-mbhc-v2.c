@@ -712,6 +712,12 @@ static void wcd_mbhc_report_plug(struct wcd_mbhc *mbhc, int insertion,
 				mbhc->mbhc_cb->compute_impedance(mbhc,
 						&mbhc->zl, &mbhc->zr);
 
+			/* ASUS_BSP Eric +++*/
+			g_ZL = mbhc->zl;
+			g_ZR = mbhc->zr;
+			printk("wcd_mbhc_v2 : print hs_imp_val : LL = %d , RR = %d\n",g_ZL, g_ZR);
+			/* ASUS_BSP Eric ---*/
+
 			if ((mbhc->zl > mbhc->mbhc_cfg->linein_th &&
 				mbhc->zl < MAX_IMPED) &&
 				(mbhc->zr > mbhc->mbhc_cfg->linein_th &&
