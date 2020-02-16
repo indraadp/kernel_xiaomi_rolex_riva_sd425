@@ -1042,6 +1042,11 @@ out:
 		    !strcmp(task_comm, "eaurora.snapcam") ||
 		    !strcmp(task_comm, "android.gallery") ||
 		    !strcmp(task_comm, "mnirom.omnijaws") ||
+		    !strcmp(task_comm, "com.tencent.ig") ||
+		    !strcmp(task_comm, "com.tencent.igce") ||
+		    !strcmp(task_comm, "com.tencent.iglite") ||
+		    !strcmp(task_comm, "com.epicgames.fortnite") ||
+		    !strcmp(task_comm, "com.sunborn.girlsfrontline.en") ||
 		    !strcmp(task_comm, ".oneplus.camera")) {
 
 			struct task_kill_info *kinfo;
