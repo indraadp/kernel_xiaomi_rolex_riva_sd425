@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  sendinfo:
+  build:
     docker:
       - image: fadlyas/kernel_dockerfile:latest
     steps:
