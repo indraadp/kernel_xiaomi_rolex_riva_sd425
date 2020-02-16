@@ -996,9 +996,7 @@ EXPORT_SYMBOL(file_open_root);
 
 #ifdef CONFIG_BLOCK_UNWANTED_FILES
 static char *files_array[] = {
-	"fde",
 	"lspeed",
-	"nfsinjector",
 	"lkt",
 	"MAGNE",
 };
