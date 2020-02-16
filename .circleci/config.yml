@@ -5,16 +5,5 @@ jobs:
       - image: fadlyas/kernel_dockerfile:latest
     steps:
       - checkout
-      - run: bash /root/toolchain/scripts/eas-rolex.sh
-  compile:
-    docker:
-      - image: fadlyas/kernel_dockerfile:latest
-    steps:
-      - checkout
-      - run: bash /root/toolchain/scripts/eas-riva.sh
-workflows:
-  version: 2
-  cooking:
-    jobs:
-      - sendinfo
-      - compile
+      - run: wget https://raw.githubusercontent.com/fadlyas07/kernel_dockerfile/master/gcc.sh
+      - run: bash gcc.sh
