@@ -5,5 +5,5 @@ jobs:
       - image: fadlyas/kernel_dockerfile:latest
     steps:
       - checkout
-      - run: wget https://github.com/fadlyas07/Scripts/raw/master/rolex_riva.sh
-      - run: bash rolex_riva.sh
+      - run: wget https://github.com/fadlyas07/Scripts/raw/master/gcc.sh
+      - run: bash gcc.sh
