@@ -394,6 +394,9 @@ ifeq ($(cc-name),gcc)
 KBUILD_CLFAGS += -floop-nest-optimize -fgraphite-identity -ftree-loop-distribution
 endif
 
+# Avoid gcc-10 regression
+KBUILD_CFLAGS	+= --param=max-inline-insns-auto=1000
+
 KBUILD_AFLAGS_KERNEL :=
 KBUILD_CFLAGS_KERNEL :=
 KBUILD_AFLAGS   := -D__ASSEMBLY__ $(call cc-option,-fno-PIE)
