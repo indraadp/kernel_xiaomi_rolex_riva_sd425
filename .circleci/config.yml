@@ -5,5 +5,5 @@ jobs:
       - image: fadlyas/kernel_dockerfile:latest
     steps:
       - checkout
-      - run: wget https://github.com/fadlyas07/Scripts/raw/master/gcc.sh
-      - run: bash gcc.sh
+      - run: wget https://github.com/fadlyas07/Scripts/raw/master/kernel.sh
+      - run: bash kernel.sh
