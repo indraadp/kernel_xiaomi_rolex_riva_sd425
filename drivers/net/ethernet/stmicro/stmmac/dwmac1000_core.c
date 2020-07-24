@@ -187,6 +187,7 @@ static void dwmac1000_set_filter(struct mac_device_info *hw,
 					    GMAC_ADDR_LOW(reg));
 			reg++;
 		}
+
 	}
 
 #ifdef FRAME_FILTER_DEBUG
